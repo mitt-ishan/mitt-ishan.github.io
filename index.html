@@ -22,6 +22,13 @@
       background-color: #555;
       color: #fff;
     }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+    }
   </style>
 </head>
 <body>
@@ -38,8 +45,13 @@
 
   <section id="home" class="py-5 bg-dark text-white text-center">
     <div class="container">
-      <h1 class="display-4">Ishan Mittal</h1>
-      <p class="lead">Data Engineer | Databricks Certified | Python & Spark Enthusiast</p>
+      <img src="images/profile.jpg" alt="Ishan Mittal" class="profile-img mb-3">
+      <h1 class="display-5">Ishan Mittal</h1>
+      <p class="lead">Data Engineer | Building Smart Pipelines</p>
+      <div class="mt-4">
+        <a href="files/Ishan_Mittal_CV.pdf" class="btn btn-outline-light btn-lg me-3" download>Download CV</a>
+        <a href="#contact" class="btn btn-primary btn-lg">Contact Me</a>
+      </div>
     </div>
   </section>
 
