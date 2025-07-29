@@ -60,6 +60,15 @@
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/home-bg.jpg') no-repeat center center, #343a40;
       background-size: cover;
     }
+
+    .bounce {
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(8px); }
+    }
   </style>
 </head>
 
@@ -87,21 +96,31 @@
   </nav>
 
   <!-- Home + About -->
-  <section id="home" class="py-5 text-white text-center bg-home" data-aos="fade-up">
+  <section id="home" class="py-5 text-white text-center bg-home d-flex align-items-center" style="min-height: 100vh;" data-aos="fade-up">
     <div class="container">
-      <img src="images/profile.jpg" alt="Ishan Mittal" class="profile-img mb-3"
+      <img src="images/profile.jpg" alt="Ishan Mittal" class="profile-img mb-4"
            onerror="this.onerror=null; this.src='https://via.placeholder.com/150';" loading="lazy" />
-      <h1 class="display-5">Ishan Mittal</h1>
-      <p class="lead">Data Engineer | Building Smart Pipelines</p>
-      <div class="row justify-content-center mt-4">
+      <h1 class="display-3 fw-bold">Ishan Mittal</h1>
+      <p class="lead fst-italic mb-4" style="letter-spacing: 1px;">Data Engineer | Building Smart Pipelines</p>
+  
+      <div class="row justify-content-center">
         <div class="col-md-8">
-          <p class="lead">
-            Results-driven Data Engineer with 5+ years of experience in building scalable data pipelines and analytics platforms across retail, healthcare, and banking sectors. Expertise in Talend, PySpark, Databricks, AWS, and Snowflake. Passionate about solving business problems through machine learning and real-time data solutions.
-          </p>
+          <div class="p-4 rounded-4" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(6px);">
+            <p class="lead mb-0">
+              Results-driven Data Engineer with 5+ years of experience in building scalable data pipelines and analytics platforms across retail, healthcare, and banking sectors. Expertise in Talend, PySpark, Databricks, AWS, and Snowflake. Passionate about solving business problems through machine learning and real-time data solutions.
+            </p>
+          </div>
         </div>
+      </div>
+  
+      <div class="mt-5">
+        <a href="#education" class="text-white text-decoration-none">
+          <i class="bi bi-chevron-down fs-1 bounce"></i>
+        </a>
       </div>
     </div>
   </section>
+
 
   <!-- Education -->
   <section id="education" class="py-5">
