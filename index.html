@@ -1,237 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* Sticky Navbar */
-    .sticky-navbar {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background-color: #333;
-    }
-    .sticky-navbar a {
-      color: white;
-      padding: 10px 15px;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .sticky-navbar a:hover {
-      background-color: #555;
-      color: #fff;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ishan Mittal | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="sticky-navbar d-flex justify-content-center">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <header>
+    <h1>Ishan Mittal</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#experience">Experience</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <!-- Home Section -->
-  <section id="home" class="py-5 bg-dark text-white text-center">
-    <div class="container">
-      <h1 class="display-4">Welcome to My Portfolio</h1>
-      <p class="lead">Scroll down to learn more about me.</p>
-    </div>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Results-driven Data Engineer with over 5 years of experience designing, developing, and optimizing large-scale data pipelines across manufacturing, retail, healthcare, and banking sectors. Skilled in building robust ETL workflows and real-time streaming solutions using Talend, PySpark, Databricks, AWS, and Snowflake. Passionate about solving business problems through scalable data solutions and machine learning models.</p>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-5 bg-light text-center">
-    <div class="container">
-      <!-- Section Heading -->
-      <h2 class="display-4 mb-4">About</h2>
-
-      <!-- Image Placeholder -->
-      <div class="d-flex justify-content-center mb-4">
-        <img src="images/about.jpg" alt="Profile Image" class="rounded-circle border border-secondary" style="width: 150px; height: 150px; object-fit: cover;">
-      </div>
-
-      <!-- About Text -->
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <p class="lead">
-            Hello, I'm Ishan Mittal, a passionate data professional with a Master's in Data Analytics and over 5 years of experience in IT. I specialize in designing data pipelines, building machine learning models, and delivering insights to drive impactful decisions.
-          </p>
-          <p class="lead">
-            I bring expertise in Python, AWS, Snowflake, and Databricks, coupled with a drive to solve complex problems. My mission is to leverage data-driven solutions to empower organizations and create meaningful innovations.
-          </p>
-        </div>
-      </div>
-    </div>
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <strong>M.Sc. in Data Analytics</strong><br />
+        University of Galway, Ireland (2023–2024)<br />
+        First-Class Honours (1.1)<br />
+        <em>Modules: Machine Learning, Deep Learning, NLP, Data Visualization, Large-Scale Data Analytics, Programming</em>
+      </li>
+      <li>
+        <strong>B.Tech. in Electronics and Communication Engineering</strong><br />
+        Delhi Technological University, India (2014–2018)<br />
+        GPA: 3.8/4.0
+      </li>
+    </ul>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-5">
-    <div class="container">
-      <!-- Section Heading -->
-      <h2 class="display-4 text-center mb-4">Projects</h2>
-
-      <!-- Project Cards -->
-      <div class="row justify-content-center">
-        <!-- Project 1: Fake News Detection -->
-        <div class="col-md-4 mb-4 d-flex align-items-stretch">
-          <div class="card h-100 shadow-sm">
-            <img src="images/projects/1.jpg" class="card-img-top" alt="Fake News Detection">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Fake News Detection</h5>
-              <p class="card-text">Developed an ensemble framework combining BERT, RoBERTa, and DeBERTa with heuristic algorithms to identify fake news effectively across datasets.</p>
-              <div class="mt-auto">
-                <a href="#" class="btn btn-primary btn-sm">Blog Post</a>
-                <a href="#" class="btn btn-secondary btn-sm">Source Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Project 2: Road Surface Classification -->
-        <div class="col-md-4 mb-4 d-flex align-items-stretch">
-          <div class="card h-100 shadow-sm">
-            <img src="images/projects/2.jpg" class="card-img-top" alt="Road Surface Classification">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Road Surface Classification</h5>
-              <p class="card-text">Designed a custom CNN integrated with Feature Pyramid Networks to classify road surfaces like asphalt, concrete, and gravel for infrastructure applications.</p>
-              <div class="mt-auto">
-                <a href="#" class="btn btn-primary btn-sm">Blog Post</a>
-                <a href="#" class="btn btn-secondary btn-sm">Source Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Project 3: Sentiment Analysis -->
-        <div class="col-md-4 mb-4 d-flex align-items-stretch">
-          <div class="card h-100 shadow-sm">
-            <img src="images/projects/3.jpg" class="card-img-top" alt="Sentiment Analysis">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Sentiment Analysis</h5>
-              <p class="card-text">Created an NLP pipeline for sentiment classification and span extraction of tweets, achieving precise results using advanced pre-trained models.</p>
-              <div class="mt-auto">
-                <a href="#" class="btn btn-primary btn-sm">Blog Post</a>
-                <a href="#" class="btn btn-secondary btn-sm">Source Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming: Python, SQL, UNIX Shell</li>
+      <li>Big Data: PySpark, Apache Spark, Talend DI, dbt, Delta Lake</li>
+      <li>Cloud & Platforms: AWS, Azure Databricks, Snowflake, PostgreSQL, MongoDB</li>
+      <li>Tools: Airflow, Kafka, Git, Docker, Kubernetes, REST/SOAP APIs</li>
+      <li>ML & AI: TensorFlow, PyTorch, scikit-learn</li>
+    </ul>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="display-4 mb-4">Skills</h2>
-      <div class="row justify-content-center">
-        <!-- Skill 1: Python -->
-        <div class="col-md-3 mb-4">
-          <div class="card h-100 shadow-sm">
-            <img src="images/skills/1.png" class="card-img-top mx-auto mt-3" style="width: 50px;" alt="Python">
-            <div class="card-body">
-              <h5 class="card-title">Python</h5>
-              <p>Proficient in Python for machine learning, data analytics, and automation tasks.</p>
-              <a href="#" class="text-primary">Link to course or bootcamp</a>
-            </div>
-          </div>
-        </div>
-        <!-- Skill 2: AWS -->
-        <div class="col-md-3 mb-4">
-          <div class="card h-100 shadow-sm">
-            <img src="images/skills/2.png" class="card-img-top mx-auto mt-3" style="width: 50px;" alt="AWS">
-            <div class="card-body">
-              <h5 class="card-title">AWS</h5>
-              <p>Experienced with AWS services like EC2, S3, and pipeline architecture.</p>
-              <a href="#" class="text-primary">Link to course or bootcamp</a>
-            </div>
-          </div>
-        </div>
-        <!-- Skill 3: Snowflake -->
-        <div class="col-md-3 mb-4">
-          <div class="card h-100 shadow-sm">
-            <img src="images/skills/3.png" class="card-img-top mx-auto mt-3" style="width: 50px;" alt="Snowflake">
-            <div class="card-body">
-              <h5 class="card-title">Snowflake</h5>
-              <p>Expert in designing and managing Snowflake databases for analytics.</p>
-              <a href="#" class="text-primary">Link to course or bootcamp</a>
-            </div>
-          </div>
-        </div>
-        <!-- Skill 4: Databricks -->
-        <div class="col-md-3 mb-4">
-          <div class="card h-100 shadow-sm">
-            <img src="images/skills/4.png" class="card-img-top mx-auto mt-3" style="width: 50px;" alt="Databricks">
-            <div class="card-body">
-              <h5 class="card-title">Databricks</h5>
-              <p>Skilled in Databricks Lakehouse for data engineering and machine learning workflows.</p>
-              <a href="#" class="text-primary">Link to course or bootcamp</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>Airbnb Data Pipeline</strong><br />
+        Built modular dbt models and integrated testing, lineage, and automation using Dabster and Snowflake.
+      </li>
+      <li>
+        <strong>Flight Delay Prediction</strong><br />
+        Developed PySpark pipeline on Databricks; trained ML models (Random Forest, Logistic Regression) for delay prediction.
+      </li>
+      <li>
+        <strong>Option Pricing with LSTM-ARIMA</strong><br />
+        Thesis project using hybrid deep learning models to improve option pricing accuracy.
+      </li>
+      <li>
+        <strong>Fake News Detection</strong><br />
+        Created an ensemble model using BERT, RoBERTa, and DeBERTa with heuristics for enhanced classification.
+      </li>
+    </ul>
   </section>
 
-  <!-- Contact Me Section -->
-  <section id="contact" class="py-5 bg-dark text-white">
-    <div class="container text-center">
-      <!-- Section Heading -->
-      <h2 class="display-4 mb-4">Contact Me</h2>
-  
-      <!-- Contact Information -->
-      <div class="row justify-content-center mb-4">
-        <div class="col-md-5 d-flex align-items-center justify-content-center mb-3 mb-md-0">
-          <i class="bi bi-envelope fs-3 me-2"></i>
-          <span class="fs-5">mitt.ishan@gmail.com</span>
-        </div>
-        <div class="col-md-5 d-flex align-items-center justify-content-center">
-          <i class="bi bi-telephone fs-3 me-2"></i>
-          <span class="fs-5">+353 899 812 377</span>
-        </div>
-      </div>
-  
-      <!-- Social Media Icons -->
-      <div class="d-flex justify-content-center">
-        <a href="#" class="btn rounded-circle mx-2" style="background-color: #ff69b4; width: 50px; height: 50px;" 
-           data-bs-toggle="tooltip" data-bs-title="LinkedIn">
-          <img src="icons/linkedin.png" alt="LinkedIn" style="width: 30px;">
-        </a>
-        <a href="#" class="btn rounded-circle mx-2" style="background-color: #ff69b4; width: 50px; height: 50px;" 
-           data-bs-toggle="tooltip" data-bs-title="Twitter">
-          <img src="icons/twitter.png" alt="Twitter" style="width: 30px;">
-        </a>
-        <a href="#" class="btn rounded-circle mx-2" style="background-color: #ff69b4; width: 50px; height: 50px;" 
-           data-bs-toggle="tooltip" data-bs-title="GitHub">
-          <img src="icons/github.png" alt="GitHub" style="width: 30px;">
-        </a>
-        <a href="#" class="btn rounded-circle mx-2" style="background-color: #ff69b4; width: 50px; height: 50px;" 
-           data-bs-toggle="tooltip" data-bs-title="Medium">
-          <img src="icons/medium.png" alt="Medium" style="width: 30px;">
-        </a>
-        <a href="#" class="btn rounded-circle mx-2" style="background-color: #ff69b4; width: 50px; height: 50px;" 
-           data-bs-toggle="tooltip" data-bs-title="YouTube">
-          <img src="icons/youtube.png" alt="YouTube" style="width: 30px;">
-        </a>
-      </div>
-    </div>
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Databricks Certified Data Engineer Associate – Apr 2025</li>
+      <li>Generative AI Fundamentals – Databricks – Nov 2024</li>
+      <li>SnowPro Core Certification – Snowflake – May 2022</li>
+      <li>AWS Certified Solutions Architect – Nov 2020 (expired)</li>
+    </ul>
   </section>
 
-    
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  
-  <script>
-    // Initialize Bootstrap tooltips
-    document.addEventListener('DOMContentLoaded', function () {
-      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl);
-      });
-    });
-  </script>
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>
+      <strong>Data Engineer – Wipro Ltd, India (2018–2023)</strong><br />
+      Designed 100+ ETL workflows using Talend DI across retail, healthcare, and banking domains. Built scalable PySpark pipelines on Databricks, migrated ETL jobs to AWS, and implemented Snowflake DWH using Medallion Architecture. Enabled real-time data processing using Kafka and delivered 20+ dashboards supporting decision-making.
+    </p>
+  </section>
+
+  <section id="awards">
+    <h2>Awards & Achievements</h2>
+    <ul>
+      <li><strong>IdeasLab Enterprise Challenge (2023)</strong>: Finalist, worked on Aerogen’s real-life problem at University of Galway</li>
+      <li><strong>Trail Blazers Award (2022)</strong>: Innovation and productivity at Wipro</li>
+      <li><strong>Five Habits Award (2022)</strong>: Trust and stewardship at Wipro</li>
+      <li><strong>Extraordinaire Award (2022)</strong>: Outstanding performance on critical deliverables</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:mitt.ishan@gmail.com">mitt.ishan@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ishan-mittal-960044" target="_blank">linkedin.com/in/ishan-mittal-960044</a></p>
+    <p>GitHub: <a href="https://github.com/mitt-ishan" target="_blank">github.com/mitt-ishan</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ishan Mittal. All rights reserved.</p>
+  </footer>
 </body>
 </html>
