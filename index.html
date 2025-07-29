@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ishan Mittal | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <style>
     .sticky-navbar {
       position: sticky;
@@ -32,7 +33,7 @@
     .bg-home {
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/home-bg.jpg') no-repeat center center, #343a40;
       background-size: cover;
-      background-color: #343a40; /* fallback */
+      background-color: #343a40;
     }
     .dark-mode {
       background-color: #121212 !important;
@@ -51,11 +52,21 @@
     .dark-mode .bg-dark {
       background-color: #121212 !important;
     }
+    .dark-toggle {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-left: 15px;
+    }
+    .form-check-input:checked {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }
   </style>
 </head>
 <body>
-  <nav class="sticky-navbar d-flex justify-content-center">
-    <a href="#home">Home</a>
+  <nav class="sticky-navbar d-flex justify-content-center align-items-center flex-wrap">
+    <a href="#home"><i class="bi bi-house-fill"></i></a>
     <a href="#about">About</a>
     <a href="#education">Education</a>
     <a href="#experience">Experience</a>
@@ -65,7 +76,13 @@
     <a href="#testimonials">Testimonials</a>
     <a href="#courses">Courses</a>
     <a href="#contact">Contact</a>
-    <button onclick="toggleDarkMode()" class="btn btn-sm btn-outline-light ms-3">Toggle Dark Mode</button>
+    <div class="dark-toggle">
+      <i class="bi bi-sun text-warning"></i>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="darkModeSwitch" onclick="toggleDarkMode()">
+      </div>
+      <i class="bi bi-moon text-light"></i>
+    </div>
   </nav>
 
   <section id="home" class="py-5 text-white text-center bg-home">
@@ -185,28 +202,39 @@
   <section id="contact" class="py-5 bg-dark text-white">
     <div class="container text-center">
       <h2 class="display-4 mb-4">Contact Me</h2>
-      <p>Email: <a href="mailto:mitt.ishan@gmail.com" class="text-white">mitt.ishan@gmail.com</a></p>
-      <p>Phone: +353 899 812 377</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/ishan-mittal-960044" class="text-white">ishan-mittal-960044</a></p>
-      <p>GitHub: <a href="https://github.com/mitt-ishan" class="text-white">github.com/mitt-ishan</a></p>
+      <div class="mb-3">
+        <i class="bi bi-envelope-fill"></i>
+        <a href="mailto:mitt.ishan@gmail.com" class="text-white ms-2">mitt.ishan@gmail.com</a>
+      </div>
+      <div class="mb-3">
+        <i class="bi bi-telephone-fill"></i>
+        <span class="ms-2">+353 899 812 377</span>
+      </div>
+      <div class="mb-3">
+        <i class="bi bi-linkedin"></i>
+        <a href="https://www.linkedin.com/in/ishan-mittal-960044" class="text-white ms-2">linkedin.com/in/ishan-mittal-960044</a>
+      </div>
+      <div class="mb-3">
+        <i class="bi bi-github"></i>
+        <a href="https://github.com/mitt-ishan" class="text-white ms-2">github.com/mitt-ishan</a>
+      </div>
     </div>
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Toggle dark mode
     function toggleDarkMode() {
       document.body.classList.toggle('dark-mode');
       localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
     }
 
-    // Apply user preference on load
     window.onload = function () {
       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark-mode');
       }
       if (localStorage.getItem('theme') === 'dark') {
         document.body.classList.add('dark-mode');
+        document.getElementById('darkModeSwitch').checked = true;
       }
     }
   </script>
