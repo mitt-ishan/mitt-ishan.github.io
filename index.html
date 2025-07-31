@@ -90,6 +90,22 @@
       height: 20px;
       border: 2px solid #fff;
     }
+
+    /* Tighter spacing before lists across timeline content */
+    .timeline-content h5,
+    .timeline-content h6,
+    .timeline-content p {
+      margin-bottom: 0.5rem;
+    }
+    
+    .timeline-content ul {
+      margin-top: 0.25rem;
+    }
+    
+    /* Optional: reusable tight-list class for future bullets anywhere */
+    .tight-list li {
+      margin-bottom: 0.35rem;
+    }
   </style>
 </head>
 
@@ -227,14 +243,37 @@
   </section>
 
   <!-- Experience -->
-  <section id="experience" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="display-4 mb-4">Experience</h2>
-      <p><strong>Wipro Limited, India (2018–2023)</strong><br />
-        Led end-to-end development of over 100 Talend DI workflows and PySpark pipelines on Databricks. Delivered analytics-ready data models in Snowflake and migrated on-prem pipelines to AWS. Collaborated cross-functionally to deliver reliable data systems supporting dashboards, alerts, and machine learning workflows.
+  <!-- Wipro -->
+  <div class="timeline-item mb-5" data-aos="fade-up" data-aos-delay="100">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content card shadow-sm p-4">
+      <h5 class="mb-2">Data Engineer</h5>
+      <h6 class="text-muted mb-2">Wipro Limited · Bengaluru, India | Jul 2018 – Jul 2023</h6>
+  
+      <p class="mb-2">
+        Designed and delivered production-grade data platforms and pipelines across retail, healthcare, and banking, enabling faster reporting, ML readiness, and real-time analytics.
       </p>
+  
+      <p class="mb-2"><strong>Key Impact:</strong></p>
+      <ul class="mb-3 tight-list">
+        <li>Built and orchestrated ETL pipelines with PySpark on Databricks—accelerated business reporting by <strong>~30%</strong>.</li>
+        <li>Developed <strong>100+ Talend DI</strong> workflows across structured/semi-structured data (SAP IDocs, XML, JSON, CSV, APIs, DBs).</li>
+        <li>Implemented ELT & data warehousing on <strong>Snowflake</strong> (Medallion + Star schemas) powering <strong>20+ dashboards</strong>.</li>
+        <li>Created reusable ETL frameworks with monitoring/logging/alerting—cut development time by <strong>~50%</strong>; reduced incident resolution by <strong>5+ hours</strong>/case.</li>
+        <li>Migrated <strong>50+ pipelines</strong> and multi-TB datasets to <strong>AWS & Snowflake</strong>, reducing processing time by <strong>~25%</strong>.</li>
+        <li>Led code reviews and sprints (on-time delivery ~<strong>95%</strong>), contributed to ~<strong>90%</strong> client satisfaction.</li>
+        <li>Mentored junior engineers and authored documentation for internal knowledge sharing.</li>
+      </ul>
+  
+      <p class="mb-2"><strong>Awards & Recognition:</strong></p>
+      <ul class="mb-0 tight-list">
+        <li><strong>Extraordinaire Award:</strong> For consistently exceeding expectations on high-impact deliverables.</li>
+        <li><strong>Trail Blazers Award:</strong> For driving innovation and boosting client productivity through optimized data pipelines.</li>
+        <li><strong>Five Habits Award:</strong> For demonstrating responsiveness, ownership, and cross-team collaboration.</li>
+        <li><strong>Leadership & Mentorship:</strong> Led sprint ceremonies and KT sessions to guide junior engineers and improve team delivery velocity.</li>
+      </ul>
     </div>
-  </section>
+  </div>
 
   <!-- Projects -->
   <section id="projects" class="py-5">
@@ -339,8 +378,8 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
+      duration: 700,
+      easing: 'ease-out',
       once: true
     });
   </script>
