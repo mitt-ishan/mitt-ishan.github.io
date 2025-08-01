@@ -88,6 +88,10 @@ html {
   margin-bottom: 0.35rem;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 /* Footer */
 footer {
   background-color: #222;
