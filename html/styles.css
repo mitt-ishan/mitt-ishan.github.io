@@ -10,17 +10,20 @@ html {
   background-color: #333;
   padding: 0.5rem 1rem;
 }
+
 .sticky-navbar .nav-left,
 .sticky-navbar .nav-center,
 .sticky-navbar .nav-right {
   display: flex;
   align-items: center;
 }
+
 .sticky-navbar a {
   color: white;
   padding: 10px;
   text-decoration: none;
 }
+
 .sticky-navbar a:hover,
 .sticky-navbar i:hover {
   background-color: #555;
@@ -34,6 +37,7 @@ html {
   border-radius: 50%;
   border: 3px solid #fff;
 }
+
 .bg-home {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/home-bg.jpg') no-repeat center center, #343a40;
   background-size: cover;
@@ -42,6 +46,7 @@ html {
 .bounce {
   animation: bounce 1.5s infinite;
 }
+
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(8px); }
@@ -52,9 +57,11 @@ html {
   padding-left: 30px;
   border-left: 2px solid #dee2e6;
 }
+
 .timeline-item {
   position: relative;
 }
+
 .timeline-marker {
   position: absolute;
   left: -11px;
@@ -72,9 +79,11 @@ html {
 .timeline-content p {
   margin-bottom: 0.5rem;
 }
+
 .timeline-content ul {
   margin-top: 0.25rem;
 }
+
 .tight-list li {
   margin-bottom: 0.35rem;
 }
