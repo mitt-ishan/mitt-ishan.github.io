@@ -1,396 +1,76 @@
-<!-- START OF FILE -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ishan Mittal | Portfolio</title>
-
-  <!-- SEO & Metadata -->
-  <meta name="description" content="Portfolio of Ishan Mittal, a Data Engineer specializing in smart pipelines, Databricks, AWS, and Snowflake." />
-  <meta name="author" content="Ishan Mittal" />
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-
-  <!-- CSS Libraries -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    .sticky-navbar {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background-color: #333;
-      padding: 0.5rem 1rem;
-    }
-
-    .sticky-navbar .nav-left,
-    .sticky-navbar .nav-center,
-    .sticky-navbar .nav-right {
-      display: flex;
-      align-items: center;
-    }
-
-    .sticky-navbar a {
-      color: white;
-      padding: 10px;
-      text-decoration: none;
-    }
-
-    .sticky-navbar a:hover,
-    .sticky-navbar i:hover {
-      background-color: #555;
-      color: #ffc107;
-    }
-
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #fff;
-    }
-
-    .bg-home {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/home-bg.jpg') no-repeat center center, #343a40;
-      background-size: cover;
-    }
-
-    .bounce {
-      animation: bounce 1.5s infinite;
-    }
-
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(8px); }
-    }
-
-    .timeline {
-      position: relative;
-      padding-left: 30px;
-      border-left: 2px solid #dee2e6;
-    }
-  
-    .timeline-item {
-      position: relative;
-    }
-    
-    .timeline-marker {
-      position: absolute;
-      left: -11px;
-      top: 10px;
-      background-color: #0d6efd;
-      border-radius: 50%;
-      width: 20px;
-      height: 20px;
-      border: 2px solid #fff;
-    }
-
-    /* Tighter spacing before lists across timeline content */
-    .timeline-content h5,
-    .timeline-content h6,
-    .timeline-content p {
-      margin-bottom: 0.5rem;
-    }
-    
-    .timeline-content ul {
-      margin-top: 0.25rem;
-    }
-    
-    /* Optional: reusable tight-list class for future bullets anywhere */
-    .tight-list li {
-      margin-bottom: 0.35rem;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishan Mittal | Data Engineer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="html/styles.css">
 </head>
 
 <body>
   <!-- Navbar -->
   <nav class="sticky-navbar d-flex justify-content-between align-items-center">
     <div class="nav-left">
-      <a href="#home"><i class="bi bi-house-fill"></i> Ishan Mittal</a>
+      <a href="index.html" class="d-flex align-items-center">
+        <i class="bi bi-house-fill me-1"></i>
+        Ishan Mittal
+      </a>
     </div>
     <div class="nav-center flex-wrap">
-      <a href="#education">Education</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#courses">Courses</a>
-<!--       <a href="#testimonials">Testimonials</a> -->
-      <a href="#contact">Contact</a>
+      <a href="html/education.html">Education</a>
+      <a href="html/experience.html">Experience</a>
+      <a href="html/projects.html">Projects</a>
+      <a href="html/skills.html">Skills</a>
+      <a href="html/certifications.html">Certifications</a>
+      <a href="html/courses.html">Courses</a>
+      <a href="html/testimonials.html">Testimonials</a>
+      <a href="html/contact.html">Contact</a>
     </div>
     <div class="nav-right">
-      <a href="files/Ishan_Mittal_CV.pdf" class="btn btn-outline-light btn-sm" download>
-        <i class="bi bi-download me-1"></i>Download CV
-      </a>
+      <a href="files/Ishan_Mittal_CV.pdf" class="btn btn-outline-light btn-sm" download>Download CV</a>
     </div>
   </nav>
 
-  <!-- Home + About -->
-  <section id="home" class="py-5 text-white text-center bg-home d-flex align-items-center" style="min-height: 100vh;" data-aos="fade-up">
+  <!-- Home Section -->
+  <section id="home" class="py-5 text-white text-center bg-home" data-aos="fade-up">
     <div class="container">
-      <img src="images/profile.jpg" alt="Ishan Mittal" class="profile-img mb-4"
-           onerror="this.onerror=null; this.src='https://via.placeholder.com/200';" loading="lazy" style="width: 200px; height: 200px;" />
-      
-      <h1 class="display-3 fw-bold">Ishan Mittal</h1>
-  
-      <p class="lead fst-italic mb-4" style="letter-spacing: 0.5px;">
-        I Build Scalable Data Pipelines That Drive Analytics, AI, and Real-Time Insights
-      </p>
-  
+      <img src="images/profile.jpg" alt="Ishan Mittal" class="profile-img mb-3">
+      <h1 class="display-5">Ishan Mittal</h1>
+      <p class="lead">Data Engineer specializing in scalable data architectures, cloud pipelines, and real-time analytics.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light text-center" data-aos="fade-up">
+    <div class="container">
+      <h2 class="display-4 mb-4">About Me</h2>
       <div class="row justify-content-center">
-        <div class="col-md-10">
-          <div class="p-4 rounded-4" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(6px); text-align: justify;">
-            <p class="lead mb-0 text-white">
-              I am a Data Engineer with over 5 years of experience designing and delivering robust data solutions across the retail, healthcare, and finance sectors. My expertise spans ETL pipeline development using Talend and PySpark, cloud data platforms like AWS and Snowflake, and analytics engines including Databricks and dbt.
-              <br><br>
-              Throughout my career, I’ve helped organizations streamline data ingestion, automate workflows, and empower analytics teams with clean, reliable, and timely data. I thrive in building scalable, production-grade pipelines that support reporting, machine learning, and real-time decision-making.
-              <br><br>
-              With a Master’s in Data Analytics from the University of Galway, I bring a unique blend of technical depth and business understanding. I’m particularly passionate about integrating automation, machine learning, and cloud-native tools to transform how data drives decisions.
-            </p>
-          </div>
+        <div class="col-md-8">
+          <p class="lead text-justify">
+            Results-driven Data Engineer with 5+ years of experience in building scalable ETL pipelines and data platforms across retail, healthcare, and banking sectors. Proficient in Talend, PySpark, Databricks, AWS, and Snowflake. Known for solving business problems using machine learning, real-time streaming, and efficient data modeling practices. Holds a First-Class Honours MSc in Data Analytics from the University of Galway.
+          </p>
         </div>
       </div>
-  
-      <div class="mt-5">
-        <a href="#education" class="text-white text-decoration-none">
-          <i class="bi bi-chevron-down fs-1 bounce"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education" class="py-5 bg-light" data-aos="fade-up">
-    <div class="container">
-      <h2 class="display-4 text-center mb-5">Education</h2>
-  
-      <div class="timeline">
-  
-        <!-- Master’s Degree -->
-        <div class="timeline-item mb-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content card shadow-sm p-4">
-            <h5 class="mb-2">M.Sc. in Data Analytics</h5>
-            <h6 class="text-muted mb-2">University of Galway, Galway, Ireland | Sep 2023 – Sep 2024</h6>
-            <p class="mb-2"><strong>Grade:</strong> First Class Honours (1.1)</p>
-  
-            <p class="mb-2">
-              A comprehensive program focused on data science and engineering techniques including ML, DL, NLP, and large-scale analytics. Included practical industry projects, thesis research, and academic coursework.
-            </p>
-              
-            <br>
-            <p class="mb-2"><strong>Relevant Modules:</strong> Machine Learning, Deep Learning, Natural Language Processing, Tools & Techniques for Large-Scale Data Analytics, Data Visualisation, Programming for Data Analytics, Advanced NLP, Web & Network Science, Applied Statistics.</p>
-  
-            <br>
-            <p class="mb-2"><strong>Thesis:</strong> <em>Enhancing Financial Derivative Valuation – A Deep Learning Approach to Option Pricing</em><br>
-              Developed and benchmarked a hybrid LSTM-ARIMA model using TensorFlow and Keras against Black-Scholes, MLP, GRU, CNN-LSTM.
-            </p>
-  
-            <br>
-            <p class="mb-2"><strong>Academic Projects:</strong></p>
-            <ul class="mb-3">
-              <li><strong>Fake News Detection:</strong> Heuristic-driven ensemble with BERT, RoBERTa, DeBERTa (Transformers).</li>
-              <li><strong>Road Surface Classification:</strong> CNN-based classifier for road images using PyTorch and OpenCV.</li>
-              <li><strong>Tweet Sentiment & Span Extraction:</strong> Combined RoBERTa embeddings with rule-based post-processing.</li>
-            </ul>
-  
-            <br>
-            <p><strong>IdeasLab Enterprise Challenge – Aerogen:</strong><br>
-            Worked on a real-world business problem to improve intern retention. Led a team through workshops on design thinking, problem framing, prototyping, and storytelling. Presented a working prototype and received a Certificate of Achievement.</p>
-          </div>
-        </div>
-  
-        <!-- B.Tech Degree -->
-        <div class="timeline-item mb-5" data-aos="fade-up" data-aos-delay="200">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content card shadow-sm p-4">
-            <h5 class="mb-2">B.Tech. in Electronics and Communication</h5>
-            <h6 class="text-muted mb-2">Delhi Technological University (Formerly DCE), Delhi, India | Aug 2014 – May 2018</h6>
-            <p class="mb-2"><strong>Grade:</strong> First Class</p>
-  
-            <p class="mb-2">
-              A rigorous undergraduate program combining electronics with strong foundations in software, math, and signal processing. Developed early interest in automation and machine perception.
-            </p>
-  
-            <br>
-            <p class="mb-2"><strong>Key Projects:</strong></p>
-            <ul class="mb-3">
-              <li><strong>Speech & Voice Recognition System:</strong> Built signal-processing-based voice commands using MFCC and DTW techniques.</li>
-              <li><strong>Image Encryption via Chaotic Mapping:</strong> Used chaos theory to secure images with nonlinear key scrambling.</li>
-              <li><strong>Text Extraction from Historical Inscriptions:</strong> Applied ICA algorithms to isolate and enhance faded text.</li>
-            </ul>
-  
-            <br>
-            <p class="mb-2"><strong>Activities & Societies:</strong></p>
-            <ul class="mb-0">
-              <li>Executive Committee Member, IEEE DTU Student Branch (2015–2017)</li>
-              <li>Led the organization of TROIKA, DTU’s annual technical festival — significantly increased student participation via strategic media outreach</li>
-              <li>Volunteered as an English & Math tutor for underprivileged children lacking access to formal education</li>
-              <li>Led a team of 10 to organize blood donation drives — saving over 100 lives</li>
-            </ul>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="py-5 bg-light" data-aos="fade-up">
-    <div class="container">
-      <h2 class="display-4 text-center mb-5">Experience</h2>
-  
-      <div class="timeline">
-        <!-- Wipro -->
-        <div class="timeline-item mb-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content card shadow-sm p-4">
-            <h5 class="mb-2">Data Engineer</h5>
-            <h6 class="text-muted mb-2">Wipro Limited, Bengaluru, India | Jul 2018 – Jul 2023</h6>
-  
-            <p class="mb-2">
-              Designed and delivered production-grade data platforms and pipelines across retail, healthcare, and banking, enabling faster reporting, ML readiness, and real-time analytics.
-            </p>
-  
-            <p class="mb-2"><strong>Key Impact:</strong></p>
-            <ul class="mb-3 tight-list">
-              <li>Built and orchestrated ETL pipelines with PySpark on Databricks—accelerated business reporting by <strong>~30%</strong>.</li>
-              <li>Developed <strong>100+ Talend DI</strong> workflows across structured/semi-structured data (SAP IDocs, XML, JSON, CSV, APIs, DBs).</li>
-              <li>Implemented ELT & data warehousing on <strong>Snowflake</strong> (Medallion + Star schemas) powering <strong>20+ dashboards</strong>.</li>
-              <li>Created reusable ETL frameworks with monitoring/logging/alerting—cut development time by <strong>~50%</strong>; reduced incident resolution by <strong>5+ hours</strong>/case.</li>
-              <li>Migrated <strong>50+ pipelines</strong> and multi-TB datasets to <strong>AWS & Snowflake</strong>, reducing processing time by <strong>~25%</strong>.</li>
-              <li>Led code reviews and sprints (on-time delivery ~<strong>95%</strong>), contributed to ~<strong>90%</strong> client satisfaction.</li>
-              <li>Mentored junior engineers and authored documentation for internal knowledge sharing.</li>
-            </ul>
-  
-            <p class="mb-2"><strong>Awards & Recognition:</strong></p>
-            <ul class="mb-0 tight-list">
-              <li><strong>Extraordinaire Award:</strong> For consistently exceeding expectations on high-impact deliverables.</li>
-              <li><strong>Trail Blazers Award:</strong> For driving innovation and boosting client productivity through optimized data pipelines.</li>
-              <li><strong>Five Habits Award:</strong> For demonstrating responsiveness, ownership, and cross-team collaboration.</li>
-              <li><strong>Leadership & Mentorship:</strong> Led sprint ceremonies and KT sessions to guide junior engineers and improve team delivery velocity.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="py-5">
-    <div class="container">
-      <h2 class="display-4 text-center mb-4">Projects</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-4 mb-4 d-flex align-items-stretch">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Airbnb Data Pipeline</h5>
-              <p class="card-text">Built a data pipeline using dbt, Snowflake, and Dabster to clean, model, and validate Airbnb listings for BI insights using Medallion Architecture.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4 d-flex align-items-stretch">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Option Pricing with Deep Learning</h5>
-              <p class="card-text">Developed a hybrid LSTM-ARIMA model to improve option pricing, outperforming traditional models like Black-Scholes and MLP.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4 d-flex align-items-stretch">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Flight Delay Prediction</h5>
-              <p class="card-text">Built a PySpark pipeline on Databricks to analyze flight delays. Integrated weather and airline datasets to generate delay risk predictions.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="display-4 mb-4">Skills</h2>
-      <p>Python, SQL, PySpark, Talend DI, dbt, AWS, Databricks, Snowflake, Kafka, Airflow, REST APIs, TensorFlow, scikit-learn</p>
-    </div>
-  </section>
-
-  <!-- Certifications -->
-  <section id="certifications" class="py-5">
-    <div class="container text-center">
-      <h2 class="display-4 mb-4">Certifications</h2>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Databricks Certified Data Engineer Associate (2025–2027)</li>
-        <li class="list-group-item">Generative AI Fundamentals – Databricks (2024–2026)</li>
-        <li class="list-group-item">SnowPro Core Certification – Snowflake (2022–2024)</li>
-        <li class="list-group-item">AWS Certified Solutions Architect – Associate (2020–2023)</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Courses -->
-  <section id="courses" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="display-4 mb-4">Courses</h2>
-      <p class="lead">Coming soon...</p>
-    </div>
-  </section>
-
-  <!-- Testimonials (Moved to second last) -->
-<!--   <section id="testimonials" class="py-5">
-    <div class="container text-center">
-      <h2 class="display-4 mb-4">Testimonials</h2>
-      <p class="lead">Coming soon...</p>
-    </div>
-  </section> -->
-
-  <!-- Contact -->
-  <section id="contact" class="py-5 bg-dark text-white" data-aos="fade-up">
-    <div class="container text-center">
-      <h2 class="display-4 mb-4">Contact Me</h2>
-      <div class="mb-3">
-        <i class="bi bi-envelope-fill"></i>
-        <a href="mailto:mitt.ishan@gmail.com" class="text-white ms-2">mitt.ishan@gmail.com</a>
-      </div>
-      <div class="mb-3">
-        <i class="bi bi-telephone-fill"></i>
-        <span class="ms-2">+353 899 812 377</span>
-      </div>
-      <div class="mb-3">
-        <i class="bi bi-linkedin"></i>
-        <a href="https://www.linkedin.com/in/ishan-mittal-960044" class="text-white ms-2">linkedin.com/in/ishan-mittal-960044</a>
-      </div>
-<!--       <div class="mb-3">
-        <i class="bi bi-github"></i>
-        <a href="https://github.com/mitt-ishan" class="text-white ms-2">github.com/mitt-ishan</a>
-      </div> -->
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <small>&copy; 2025 Ishan Mittal. All rights reserved.</small>
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 Ishan Mittal. All rights reserved.</p>
+      <div class="mb-2">
+        <a href="mailto:mitt.ishan@gmail.com" class="text-white me-3"><i class="bi bi-envelope-fill"></i></a>
+        <a href="https://www.linkedin.com/in/ishan-mittal-960044" target="_blank" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/mitt-ishan" target="_blank" class="text-white"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 700,
-      easing: 'ease-out',
-      once: true
-    });
-  </script>
+  <script>AOS.init();</script>
 </body>
 </html>
-<!-- END OF FILE -->
