@@ -1,41 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ishan Mittal | Data Engineer Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="html/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+  <link rel="stylesheet" href="html/styles.css"/>
 </head>
+
 <body>
-  <!-- Navbar -->
-  <nav class="sticky-navbar d-flex justify-content-between align-items-center">
-    <div class="nav-left">
-      <a href="index.html" class="d-flex align-items-center">
-        <i class="bi bi-house-fill me-1"></i>
-        Ishan Mittal
-      </a>
-    </div>
-    <div class="nav-center flex-wrap">
-      <a href="html/education.html">Education</a>
-      <a href="html/experience.html">Experience</a>
-      <a href="html/projects.html">Projects</a>
-      <a href="html/skills.html">Skills</a>
-      <a href="html/certifications.html">Certifications</a>
-      <a href="html/testimonials.html">Testimonials</a>
-      <a href="html/contact.html">Contact</a>
-    </div>
-    <div class="nav-right">
-      <a href="files/Ishan_Mittal_CV.pdf" class="btn btn-outline-light btn-sm" download>Download CV</a>
-    </div>
-  </nav>
+  <!-- Navbar Include -->
+  <div data-include="html/navbar.html"></div>
 
   <!-- Home Section -->
   <section id="home" class="py-5 text-white text-center bg-home" data-aos="fade-up">
     <div class="container">
-      <img src="images/profile.jpg" alt="Ishan Mittal" class="profile-img mb-3">
+      <img src="images/profile.jpg" alt="Ishan Mittal" class="profile-img mb-3"/>
       <h1 class="display-5">Ishan Mittal</h1>
       <p class="lead">Data Engineer specializing in scalable data architectures, cloud pipelines, and real-time analytics.</p>
     </div>
@@ -43,50 +25,44 @@
 
   <!-- About Section -->
   <section id="about" class="py-5 bg-light text-center" data-aos="fade-up">
-  <div class="container">
-    <h2 class="display-4 mb-4">About Me</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-10">
-        <div class="p-4" style="text-align: justify;">
-          <p class="lead mb-0 text-dark">
-            I am a Data Engineer with over 5 years of experience designing and delivering robust data solutions across the retail, healthcare, and finance sectors. My expertise spans ETL pipeline development using Talend and PySpark, cloud data platforms like AWS and Snowflake, and analytics engines including Databricks and dbt.
-            <br><br>
-            Throughout my career, I’ve helped organizations streamline data ingestion, automate workflows, and empower analytics teams with clean, reliable, and timely data. I thrive in building scalable, production-grade pipelines that support reporting, machine learning, and real-time decision-making.
-            <br><br>
-            With a Master’s in Data Analytics from the University of Galway, I bring a unique blend of technical depth and business understanding. I’m particularly passionate about integrating automation, machine learning, and cloud-native tools to transform how data drives decisions.
-          </p>
+    <div class="container">
+      <h2 class="display-4 mb-4">About Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="p-4" style="text-align: justify;">
+            <p class="lead mb-0 text-dark">
+              I am a Data Engineer with over 5 years of experience designing and delivering robust data solutions across the retail, healthcare, and finance sectors. My expertise spans ETL pipeline development using Talend and PySpark, cloud data platforms like AWS and Snowflake, and analytics engines including Databricks and dbt.
+              <br><br>
+              Throughout my career, I’ve helped organizations streamline data ingestion, automate workflows, and empower analytics teams with clean, reliable, and timely data. I thrive in building scalable, production-grade pipelines that support reporting, machine learning, and real-time decision-making.
+              <br><br>
+              With a Master’s in Data Analytics from the University of Galway, I bring a unique blend of technical depth and business understanding. I’m particularly passionate about integrating automation, machine learning, and cloud-native tools to transform how data drives decisions.
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-5 bg-dark text-white">
-    <div class="container text-center">
-      <h2 class="display-4 mb-4">Contact Me</h2>
-      <div class="mb-3">
-        <i class="bi bi-envelope-fill"></i>
-        <a href="mailto:mitt.ishan@gmail.com" class="text-white ms-2">mitt.ishan@gmail.com</a>
-      </div>
-      <div class="mb-3">
-        <i class="bi bi-telephone-fill"></i>
-        <span class="ms-2">+353 899 812 377</span>
-      </div>
-      <div class="mb-3">
-        <i class="bi bi-linkedin"></i>
-        <a href="https://www.linkedin.com/in/ishan-mittal-960044" class="text-white ms-2">linkedin.com/in/ishan-mittal-960044</a>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <small>&copy; 2025 Ishan Mittal. All rights reserved.</small>
-  </footer>
+  <!-- Contact Include -->
+  <div data-include="html/contact.html"></div>
 
+  <!-- Footer Include -->
+  <div data-include="html/footer.html"></div>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script>
+    AOS.init();
+    // Include shared HTML components
+    document.addEventListener("DOMContentLoaded", function () {
+      const includes = document.querySelectorAll('[data-include]');
+      includes.forEach(el => {
+        fetch(el.getAttribute('data-include'))
+          .then(res => res.text())
+          .then(data => el.innerHTML = data);
+      });
+    });
+  </script>
 </body>
 </html>
