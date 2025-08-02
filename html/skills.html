@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education | Ishan Mittal</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+</head>
+
+<body>
+  <!-- Navbar Include -->
+  <div data-include="navbar.html"></div>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container text-center">
+      <h2 class="display-4 mb-4">Skills</h2>
+      <div class="row">
+        
+        <div class="col-md-4 mb-4">
+          <h5 class="text-primary">Programming & Scripting</h5>
+          <ul class="list-unstyled">
+            <li>Python</li>
+            <li>SQL</li>
+            <li>UNIX Shell Scripting</li>
+          </ul>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <h5 class="text-primary">Big Data & ETL</h5>
+          <ul class="list-unstyled">
+            <li>PySpark</li>
+            <li>Apache Spark</li>
+            <li>Talend DI</li>
+            <li>dbt</li>
+            <li>Data Lakes (S3, Delta Lake)</li>
+          </ul>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <h5 class="text-primary">Cloud & Data Platforms</h5>
+          <ul class="list-unstyled">
+            <li>AWS</li>
+            <li>Azure Databricks</li>
+            <li>Snowflake</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <h5 class="text-primary">DevOps & Tools</h5>
+          <ul class="list-unstyled">
+            <li>Git</li>
+            <li>Apache Airflow</li>
+            <li>Apache Kafka</li>
+            <li>Docker (basic)</li>
+            <li>Kubernetes (basic)</li>
+            <li>APIs (REST/SOAP)</li>
+          </ul>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <h5 class="text-primary">Machine Learning & AI</h5>
+          <ul class="list-unstyled">
+            <li>TensorFlow</li>
+            <li>PyTorch</li>
+            <li>scikit-learn</li>
+          </ul>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <h5 class="text-primary">Other Competencies</h5>
+          <ul class="list-unstyled">
+            <li>Agile Delivery</li>
+            <li>Data Warehousing</li>
+            <li>Dimensional Modeling</li>
+            <li>Medallion Architecture</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Include -->
+  <div data-include="contact.html"></div>
+
+  <!-- Footer Include -->
+  <div data-include="footer.html"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.addEventListener("DOMContentLoaded", function () {
+      const includes = document.querySelectorAll('[data-include]');
+      includes.forEach(el => {
+        fetch(el.getAttribute('data-include'))
+          .then(res => res.text())
+          .then(data => el.innerHTML = data);
+      });
+    });
+  </script>
+</body>
+</html>
