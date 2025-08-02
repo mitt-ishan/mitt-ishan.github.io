@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education | Ishan Mittal</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+</head>
+
+<body>
+  <!-- Navbar Include -->
+  <div data-include="navbar.html"></div>
+
+   <!-- Experience -->
+  <section id="experience" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="display-4 text-center mb-5">Experience</h2>
+  
+      <div class="timeline">
+        <!-- Wipro -->
+        <div class="timeline-item mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content card shadow-sm p-4">
+            <h5 class="mb-2">Data Engineer</h5>
+            <h6 class="text-muted mb-2">Wipro Limited, Bengaluru, India | Jul 2018 – Jul 2023</h6>
+  
+            <p class="mb-2">
+              Designed and delivered production-grade data platforms and pipelines across retail, healthcare, and banking, enabling faster reporting, ML readiness, and real-time analytics.
+            </p>
+  
+            <p class="mb-2"><strong>Key Impact:</strong></p>
+            <ul class="mb-3 tight-list">
+              <li>Built and orchestrated ETL pipelines with PySpark on Databricks—accelerated business reporting by <strong>~30%</strong>.</li>
+              <li>Developed <strong>100+ Talend DI</strong> workflows across structured/semi-structured data (SAP IDocs, XML, JSON, CSV, APIs, DBs).</li>
+              <li>Implemented ELT & data warehousing on <strong>Snowflake</strong> (Medallion + Star schemas) powering <strong>20+ dashboards</strong>.</li>
+              <li>Created reusable ETL frameworks with monitoring/logging/alerting—cut development time by <strong>~50%</strong>; reduced incident resolution by <strong>5+ hours</strong>/case.</li>
+              <li>Migrated <strong>50+ pipelines</strong> and multi-TB datasets to <strong>AWS & Snowflake</strong>, reducing processing time by <strong>~25%</strong>.</li>
+              <li>Led code reviews and sprints (on-time delivery ~<strong>95%</strong>), contributed to ~<strong>90%</strong> client satisfaction.</li>
+              <li>Mentored junior engineers and authored documentation for internal knowledge sharing.</li>
+            </ul>
+  
+            <p class="mb-2"><strong>Awards & Recognition:</strong></p>
+            <ul class="mb-0 tight-list">
+              <li><strong>Extraordinaire Award:</strong> For consistently exceeding expectations on high-impact deliverables.</li>
+              <li><strong>Trail Blazers Award:</strong> For driving innovation and boosting client productivity through optimized data pipelines.</li>
+              <li><strong>Five Habits Award:</strong> For demonstrating responsiveness, ownership, and cross-team collaboration.</li>
+              <li><strong>Leadership & Mentorship:</strong> Led sprint ceremonies and KT sessions to guide junior engineers and improve team delivery velocity.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Include -->
+  <div data-include="contact.html"></div>
+
+  <!-- Footer Include -->
+  <div data-include="footer.html"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.addEventListener("DOMContentLoaded", function () {
+      const includes = document.querySelectorAll('[data-include]');
+      includes.forEach(el => {
+        fetch(el.getAttribute('data-include'))
+          .then(res => res.text())
+          .then(data => el.innerHTML = data);
+      });
+    });
+  </script>
+</body>
+</html>
