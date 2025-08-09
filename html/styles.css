@@ -113,3 +113,14 @@ footer {
   padding: 1rem 0;
   text-align: center;
 }
+
+/* Reduce space between headings/paragraphs and lists globally */
+h1 + ul,
+h2 + ul,
+h3 + ul,
+h4 + ul,
+h5 + ul,
+h6 + ul,
+p + ul {
+  margin-top: 0.25rem; /* tighter gap */
+}
