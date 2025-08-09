@@ -13,14 +13,16 @@
   <div data-include="navbar.html"></div>
 
   <!-- Skills Section -->
-  <section id="skills" class="py-5 bg-light" data-aos="fade-up">
+  <section id="skills" class="py-5 bg-light">
     <div class="container">
       <h2 class="display-4 text-center mb-5">Skills</h2>
 
-      <!-- Technical Skills & Tools -->
+      <!-- Technical Skills -->
       <div class="mb-5">
         <h4 class="text-primary mb-4">Technical Skills &amp; Tools</h4>
+
         <div class="row row-cols-1 row-cols-md-2 g-4">
+
           <!-- Programming & Scripting -->
           <div class="col">
             <div class="card h-100">
@@ -34,45 +36,64 @@
               </div>
             </div>
           </div>
-          <!-- Big Data & ETL -->
+
+          <!-- Data Processing (Spark/Databricks) -->
           <div class="col">
             <div class="card h-100">
               <div class="card-body">
-                <h6 class="card-title">Big Data &amp; ETL</h6>
+                <h6 class="card-title">Data Processing</h6>
                 <ul class="list-unstyled mb-0">
-                  <li>PySpark</li>
-                  <li>Apache Spark</li>
+                  <li>Apache Spark &amp; PySpark</li>
+                  <li>Databricks (Delta Lake, Jobs, Notebooks)</li>
+                  <li>dbt (ELT models &amp; tests)</li>
                   <li>Talend DI</li>
-                  <li>dbt</li>
                 </ul>
               </div>
             </div>
           </div>
-          <!-- Cloud Platforms -->
+
+          <!-- Orchestration & Workflow -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h6 class="card-title">Orchestration &amp; Workflow</h6>
+                <ul class="list-unstyled mb-0">
+                  <li>Apache Airflow</li>
+                  <li>CI/CD Concepts</li>
+                  <li>Git &amp; GitHub</li>
+                  <li>JIRA</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cloud Platforms (AWS) -->
           <div class="col">
             <div class="card h-100">
               <div class="card-body">
                 <h6 class="card-title">Cloud Platforms</h6>
                 <ul class="list-unstyled mb-0">
-                  <li>AWS (S3, Glue, Redshift, Lambda, Athena)</li>
-                  <li>Azure Databricks</li>
+                  <li>AWS: S3, Glue, Redshift, Athena, Lambda</li>
+                  <li>Databricks (Cloud-native)</li>
                 </ul>
               </div>
             </div>
           </div>
-          <!-- Data Warehousing & Lakes -->
+
+          <!-- Warehousing & Data Lakes -->
           <div class="col">
             <div class="card h-100">
               <div class="card-body">
-                <h6 class="card-title">Data Warehousing &amp; Lakes</h6>
+                <h6 class="card-title">Warehousing &amp; Data Lakes</h6>
                 <ul class="list-unstyled mb-0">
-                  <li>Snowflake</li>
-                  <li>Delta Lake</li>
-                  <li>S3 Data Lake</li>
+                  <li>Snowflake (ELT, dimensional models)</li>
+                  <li>Delta Lake (ACID, time travel)</li>
+                  <li>Amazon S3 Data Lake</li>
                 </ul>
               </div>
             </div>
           </div>
+
           <!-- Databases -->
           <div class="col">
             <div class="card h-100">
@@ -81,124 +102,96 @@
                 <ul class="list-unstyled mb-0">
                   <li>PostgreSQL</li>
                   <li>MongoDB</li>
-                  <li>SQL Server (basic)</li>
                 </ul>
               </div>
             </div>
           </div>
-          <!-- Machine Learning & AI -->
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <h6 class="card-title">Machine Learning &amp; AI</h6>
-                <ul class="list-unstyled mb-0">
-                  <li>TensorFlow</li>
-                  <li>PyTorch</li>
-                  <li>scikit-learn</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Techniques & Methodologies -->
-      <div class="mb-5">
-        <h4 class="text-primary mb-4">Techniques &amp; Methodologies</h4>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <!-- Workflow Orchestration & DevOps -->
+          <!-- Streaming & Integration -->
           <div class="col">
             <div class="card h-100">
               <div class="card-body">
-                <h6 class="card-title">Workflow Orchestration &amp; DevOps</h6>
-                <ul class="list-unstyled mb-0">
-                  <li>Apache Airflow</li>
-                  <li>Git &amp; GitHub</li>
-                  <li>Docker (basic)</li>
-                  <li>Kubernetes (basic)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Streaming & APIs -->
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <h6 class="card-title">Streaming &amp; APIs</h6>
+                <h6 class="card-title">Streaming &amp; Integration</h6>
                 <ul class="list-unstyled mb-0">
                   <li>Apache Kafka</li>
                   <li>REST APIs</li>
-                  <li>SOAP APIs</li>
                   <li>Postman</li>
                 </ul>
               </div>
             </div>
           </div>
-          <!-- Data Engineering Techniques -->
+
+          <!-- DevOps & Platform -->
           <div class="col">
             <div class="card h-100">
               <div class="card-body">
-                <h6 class="card-title">Data Engineering Techniques</h6>
+                <h6 class="card-title">DevOps &amp; Platform</h6>
                 <ul class="list-unstyled mb-0">
-                  <li>Dimensional Modeling</li>
-                  <li>Medallion Architecture</li>
-                  <li>ELT / ETL Design</li>
-                  <li>Data Quality &amp; Lineage</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Project & Delivery -->
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <h6 class="card-title">Project &amp; Delivery</h6>
-                <ul class="list-unstyled mb-0">
-                  <li>Agile Delivery</li>
-                  <li>JIRA</li>
-                  <li>CI/CD Concepts</li>
+                  <li>Docker (basic)</li>
+                  <li>Terraform (basic)</li>
                   <li>Documentation &amp; Code Review</li>
                 </ul>
               </div>
             </div>
           </div>
+
+          <!-- Machine Learning (kept compact) -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h6 class="card-title">Machine Learning</h6>
+                <ul class="list-unstyled mb-0">
+                  <li>scikit-learn</li>
+                  <li>TensorFlow</li>
+                  <li>PyTorch</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Modeling & Governance -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h6 class="card-title">Data Modeling &amp; Governance</h6>
+                <ul class="list-unstyled mb-0">
+                  <li>Dimensional Modeling (Star/Snowflake)</li>
+                  <li>Medallion Architecture</li>
+                  <li>Data Quality &amp; Lineage</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- Soft Skills -->
+      <!-- Soft Skills (no cards) -->
       <div class="mb-5">
-        <h4 class="text-primary mb-4">Soft Skills</h4>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <!-- Core Soft Skills -->
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <h6 class="card-title">Core Soft Skills</h6>
-                <ul class="list-unstyled mb-0">
-                  <li>Problem-Solving</li>
-                  <li>Analytical Thinking</li>
-                  <li>Stakeholder Communication</li>
-                  <li>Collaboration &amp; Teamwork</li>
-                  <li>Leadership &amp; Mentorship</li>
-                  <li>Technical Documentation</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Office Tools -->
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <h6 class="card-title">Office Tools</h6>
-                <ul class="list-unstyled mb-0">
-                  <li>MS Excel</li>
-                  <li>MS Word</li>
-                  <li>MS PowerPoint</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h4 class="text-primary mb-3">Soft Skills</h4>
+        <ul class="list-unstyled tight-list">
+          <li class="mb-2">
+            <strong>Problem Solving:</strong> Breaks down ambiguous requirements, isolates root causes, and proposes pragmatic, testable solutions that balance performance and cost.
+          </li>
+          <li class="mb-2">
+            <strong>Analytical Thinking:</strong> Uses data profiling and metrics to guide design choices; validates assumptions with queries, prototypes, and benchmarks.
+          </li>
+          <li class="mb-2">
+            <strong>Stakeholder Communication:</strong> Translates technical details into business impact; sets clear expectations and provides crisp status updates.
+          </li>
+          <li class="mb-2">
+            <strong>Collaboration &amp; Teamwork:</strong> Partners effectively with analysts, data scientists, and SREs; unblocks teammates via code reviews and shared utilities.
+          </li>
+          <li class="mb-2">
+            <strong>Leadership &amp; Mentorship:</strong> Coaches juniors on Spark best practices, code quality, and debugging; drives sprint rituals and promotes ownership.
+          </li>
+          <li class="mb-2">
+            <strong>Documentation Discipline:</strong> Writes runbooks, diagrams, and README guides that reduce onboarding time and improve incident response.
+          </li>
+          <li class="mb-2">
+            <strong>Reliability Mindset:</strong> Designs for observability and recovery—alerts, logs, and retries to keep pipelines trustworthy in production.
+          </li>
+        </ul>
       </div>
 
     </div>
@@ -212,9 +205,8 @@
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init();
+    // Include shared HTML components
     document.addEventListener("DOMContentLoaded", function () {
       const includes = document.querySelectorAll('[data-include]');
       includes.forEach(el => {
