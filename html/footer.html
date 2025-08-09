@@ -1,5 +1,58 @@
 <footer class="bg-dark text-white text-center py-3">
-  <small>&copy; 2025 Ishan Mittal. All rights reserved.</small>
+  <div class="container d-flex align-items-center justify-content-between flex-wrap">
+    <!-- Left: copyright -->
+    <small class="mb-2 mb-md-0">&copy; 2025 Ishan Mittal</small>
+
+    <!-- Center: social icons -->
+    <div class="flex-grow-1 d-flex justify-content-center mb-2 mb-md-0">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-icon me-3" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-icon me-3" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/ishan-mittal-960044" target="_blank" rel="noopener" class="social-icon me-3" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/mitt-ishan" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+    <!-- Right: spacer for alignment -->
+    <div class="d-none d-md-block" style="width:120px;"></div>
+  </div>
+
+  <style>
+    .social-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #fff;
+      color: #000;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: transform .15s ease, opacity .15s ease;
+      font-size: 1rem;
+    }
+    .social-icon:hover {
+      transform: translateY(-1px);
+      opacity: .9;
+    }
+  </style>
+
+  <script>
+    // Ensure Font Awesome is available on every page without editing each file
+    (function () {
+      var exists = document.querySelector('link[href*="font-awesome"], link[href*="fontawesome"]');
+      if (!exists) {
+        var fa = document.createElement('link');
+        fa.rel = 'stylesheet';
+        fa.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css';
+        document.head.appendChild(fa);
+      }
+    })();
+  </script>
 </footer>
-
-
