@@ -79,7 +79,9 @@ html {
 .timeline-content p {
   margin-bottom: 0.5rem;
 }
-
+.timeline-content li {
+  text-align: justify;
+}
 .timeline-content ul {
   margin-top: 0.25rem;
 }
