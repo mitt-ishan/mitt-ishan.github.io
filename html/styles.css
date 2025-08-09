@@ -130,3 +130,7 @@ p + ul {
   height: 50px;
   object-fit: contain;
 }
+
+.card-body p {
+  text-align: justify;
+}
