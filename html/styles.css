@@ -124,3 +124,9 @@ h6 + ul,
 p + ul {
   margin-top: 0.25rem; /* tighter gap */
 }
+
+.company-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
