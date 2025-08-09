@@ -92,6 +92,20 @@ html {
   text-align: justify;
 }
 
+#contact a {
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+#contact a:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+#contact i {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
 /* Footer */
 footer {
   background-color: #222;
