@@ -8,33 +8,17 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    /* Larger, consistent badge size */
     .badge-img {
-      width: 84px;
-      height: 84px;
+      width: 120px;
+      height: 120px;
       object-fit: contain;
-      flex: 0 0 auto;
+      display: block;
+      margin: 0 auto;
     }
-    .cert-card .card-body {
-      display: flex;
-      flex-direction: column;
-      gap: .75rem;
-    }
-    .cert-header {
-      display: flex;
-      align-items: center;
-      gap: .75rem;
-    }
-    .cert-title {
-      margin: 0;
-      line-height: 1.2;
-    }
-    .cert-issuer {
-      margin: 0;
-    }
-    .cert-meta {
-      margin: 0;
-    }
+    .cert-card .card-body { text-align: center; }
+    .cert-title { margin-top: 1rem; font-size: 1.1rem; font-weight: 600; }
+    .cert-issuer { color: #6c757d; margin-bottom: .5rem; }
+    .cert-meta { font-size: .95rem; margin-bottom: 1rem; }
   </style>
 </head>
 
@@ -50,16 +34,12 @@
       <h3 class="mb-4">Active Certifications</h3>
       <div class="row g-4 mb-5">
 
-        <div class="col-md-4">
-          <div class="card h-100 cert-card">
+        <div class="col-md-6">
+          <div class="card h-100 cert-card p-3">
+            <img src="../images/certifications/Databricks Certified Data Engineer Associate - Badge.png" alt="Databricks badge" class="badge-img">
             <div class="card-body">
-              <div class="cert-header">
-                <img src="../images/certifications/Databricks Certified Data Engineer Associate - Badge.png" alt="Databricks badge" class="badge-img">
-                <div>
-                  <h5 class="cert-title">Databricks Certified Data Engineer Associate</h5>
-                  <p class="text-muted cert-issuer">Databricks</p>
-                </div>
-              </div>
+              <h5 class="cert-title">Databricks Certified Data Engineer Associate</h5>
+              <p class="cert-issuer">Databricks</p>
               <p class="cert-meta">
                 <strong>Issued:</strong> Apr 2025<br>
                 <strong>Expires:</strong> Apr 2027
@@ -75,16 +55,12 @@
       <h3 class="mb-4">Accreditations</h3>
       <div class="row g-4 mb-5">
 
-        <div class="col-md-4">
-          <div class="card h-100 cert-card">
+        <div class="col-md-6">
+          <div class="card h-100 cert-card p-3">
+            <img src="../images/certifications/Academy Accreditation - Databricks Fundamentals - Badge.png" alt="Databricks badge" class="badge-img">
             <div class="card-body">
-              <div class="cert-header">
-                <img src="../images/certifications/Academy Accreditation - Databricks Fundamentals - Badge.png" alt="Databricks badge" class="badge-img">
-                <div>
-                  <h5 class="cert-title">Academy Accreditation - Databricks Fundamentals</h5>
-                  <p class="text-muted cert-issuer">Databricks</p>
-                </div>
-              </div>
+              <h5 class="cert-title">Academy Accreditation - Databricks Fundamentals</h5>
+              <p class="cert-issuer">Databricks</p>
               <p class="cert-meta">
                 <strong>Issued:</strong> Nov 2024<br>
                 <strong>Expires:</strong> Nov 2025
@@ -94,16 +70,12 @@
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card h-100 cert-card">
+        <div class="col-md-6">
+          <div class="card h-100 cert-card p-3">
+            <img src="../images/certifications/Academy Accreditation - Generative AI Fundamentals - Badge.png" alt="Databricks badge" class="badge-img">
             <div class="card-body">
-              <div class="cert-header">
-                <img src="../images/certifications/Academy Accreditation - Generative AI Fundamentals - Badge.png" alt="Databricks badge" class="badge-img">
-                <div>
-                  <h5 class="cert-title">Academy Accreditation - Generative AI Fundamentals</h5>
-                  <p class="text-muted cert-issuer">Databricks</p>
-                </div>
-              </div>
+              <h5 class="cert-title">Academy Accreditation - Generative AI Fundamentals</h5>
+              <p class="cert-issuer">Databricks</p>
               <p class="cert-meta">
                 <strong>Issued:</strong> Nov 2024<br>
                 <strong>Expires:</strong> Nov 2026
@@ -113,16 +85,12 @@
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card h-100 cert-card">
+        <div class="col-md-6">
+          <div class="card h-100 cert-card p-3">
+            <img src="../images/certifications/Confluent Fundamentals Accreditation.png" alt="Confluent badge" class="badge-img">
             <div class="card-body">
-              <div class="cert-header">
-                <img src="../images/certifications/Confluent Fundamentals Accreditation.png" alt="Confluent badge" class="badge-img">
-                <div>
-                  <h5 class="cert-title">Confluent Fundamentals Accreditation</h5>
-                  <p class="text-muted cert-issuer">Confluent</p>
-                </div>
-              </div>
+              <h5 class="cert-title">Confluent Fundamentals Accreditation</h5>
+              <p class="cert-issuer">Confluent</p>
               <p class="cert-meta">
                 <strong>Issued:</strong> Jun 2025
               </p>
@@ -137,16 +105,12 @@
       <h3 class="mb-4">Expired Certifications</h3>
       <div class="row g-4">
 
-        <div class="col-md-4">
-          <div class="card h-100 cert-card">
+        <div class="col-md-6">
+          <div class="card h-100 cert-card p-3">
+            <img src="../images/certifications/SnowPro_Core_Certification_Badge.png" alt="Snowflake badge" class="badge-img">
             <div class="card-body">
-              <div class="cert-header">
-                <img src="../images/certifications/SnowPro_Core_Certification_Badge.png" alt="Snowflake badge" class="badge-img">
-                <div>
-                  <h5 class="cert-title">SnowPro Core Certification</h5>
-                  <p class="text-muted cert-issuer">Snowflake</p>
-                </div>
-              </div>
+              <h5 class="cert-title">SnowPro Core Certification</h5>
+              <p class="cert-issuer">Snowflake</p>
               <p class="cert-meta">
                 <strong>Issued:</strong> May 2022<br>
                 <strong>Expired:</strong> May 2024
@@ -156,16 +120,12 @@
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card h-100 cert-card">
+        <div class="col-md-6">
+          <div class="card h-100 cert-card p-3">
+            <img src="../images/certifications/AWS Certified Solutions Architect - Associate certificate - Badge.png" alt="AWS badge" class="badge-img">
             <div class="card-body">
-              <div class="cert-header">
-                <img src="../images/certifications/AWS Certified Solutions Architect - Associate certificate - Badge.png" alt="AWS badge" class="badge-img">
-                <div>
-                  <h5 class="cert-title">AWS Certified Solutions Architect - Associate</h5>
-                  <p class="text-muted cert-issuer">Amazon Web Services (AWS)</p>
-                </div>
-              </div>
+              <h5 class="cert-title">AWS Certified Solutions Architect - Associate</h5>
+              <p class="cert-issuer">Amazon Web Services (AWS)</p>
               <p class="cert-meta">
                 <strong>Issued:</strong> Nov 2020<br>
                 <strong>Expired:</strong> Nov 2023
