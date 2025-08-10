@@ -4,11 +4,14 @@ html {
 }
 
 .sticky-navbar {
-  position: sticky;
+  position: fixed;       /* Changed from sticky to fixed */
   top: 0;
-  z-index: 1000;
+  left: 0;
+  right: 0;
+  z-index: 1100;         /* Slightly higher to be above all content */
   background-color: #333;
   padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Optional subtle shadow */
 }
 
 .sticky-navbar .nav-left,
@@ -28,6 +31,11 @@ html {
 .sticky-navbar i:hover {
   background-color: #555;
   color: #ffc107;
+}
+
+/* Add padding to body so content isn't hidden under fixed navbar */
+body {
+  padding-top: 60px; /* Adjust if your navbar is taller/shorter */
 }
 
 .profile-img {
